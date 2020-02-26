@@ -1,5 +1,5 @@
 # Software-Guild-Work
-This repository contains my work completed at the Software Guild (April 2018 cohort)
+This repository contains my work completed at the Software Guild (April 2018 cohort). This cohort focused on the skills required to develop fullstack .NET applications.
 
 # Battleship
 
