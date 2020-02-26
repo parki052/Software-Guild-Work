@@ -1,0 +1,9 @@
+C:\Repos\kellen-parkinson-individual-work\SGFlooring\SGFlooring.Data\obj\Debug\SGFlooring.Data.csprojResolveAssemblyReference.cache
+C:\Repos\kellen-parkinson-individual-work\SGFlooring\SGFlooring.Data\obj\Debug\SGFlooring.Data.csproj.CoreCompileInputs.cache
+C:\Repos\kellen-parkinson-individual-work\SGFlooring\SGFlooring.Data\bin\Debug\SGFlooring.Data.dll
+C:\Repos\kellen-parkinson-individual-work\SGFlooring\SGFlooring.Data\bin\Debug\SGFlooring.Data.pdb
+C:\Repos\kellen-parkinson-individual-work\SGFlooring\SGFlooring.Data\bin\Debug\SGFlooring.Models.dll
+C:\Repos\kellen-parkinson-individual-work\SGFlooring\SGFlooring.Data\bin\Debug\SGFlooring.Models.pdb
+C:\Repos\kellen-parkinson-individual-work\SGFlooring\SGFlooring.Data\obj\Debug\SGFlooring.Data.csproj.CopyComplete
+C:\Repos\kellen-parkinson-individual-work\SGFlooring\SGFlooring.Data\obj\Debug\SGFlooring.Data.dll
+C:\Repos\kellen-parkinson-individual-work\SGFlooring\SGFlooring.Data\obj\Debug\SGFlooring.Data.pdb

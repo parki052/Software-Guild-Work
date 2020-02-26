@@ -1,0 +1,101 @@
+﻿@model SG_Dealership.Models.AddVehicleVM
+@section Scripts
+{
+    <script type="text/javascript">
+        $("#makeList").change(function () {
+            $.ajax({
+                type: 'GET',
+                url: "http://localhost:63082/models/get/" + $("#makeList").val(),
+                success: function (models) {
+                    $("#modelList").html('');
+                    $.each(models, function (index, model) {
+                        $("#modelList").append('<option value=' + model.Id + '>' + model.Name + '</option>');
+                    }
+                    )
+                },
+                error: function (a, b, c) {
+                    alert("There are no models that correspond to the selected make.")
+                }
+            });
+        });
+    </script>
+}
+
+<h3>Add Vehicle</h3>
+<div>
+    @using (Html.BeginForm("AddVehicle", "Admin", FormMethod.Post, new { enctype = "multipart/form-data" }))
+    {
+        @Html.HiddenFor(m => m.PicturePath)
+        @Html.HiddenFor(m => m.VehicleId)
+        <div class="row">
+            <span class="text text-danger"> @Html.ValidationSummary()</span>
+            <div class=" col col-md-4">
+                <div class="form-group">
+                    <label>Make</label>
+                    @Html.DropDownListFor(m => m.SelectedMakeId, Model.AllMakes, new { @class = "form-control", @id = "makeList" })
+                </div>
+                <div class="form-group">
+                    <label>Type</label>
+                    @Html.DropDownListFor(m => m.SelectedConditionId, Model.AllConditions, new { @class = "form-control" })
+                </div>
+                <div class="form-group">
+                    <label>Year</label>
+                    @Html.TextBoxFor(m => m.Year, new { @class = "form-control", placeholder = "55" })
+                </div>
+                <div class="form-group">
+                    <label>Color</label>
+                    @Html.DropDownListFor(m => m.SelectedColorId, Model.AllColors, new { @class = "form-control" })
+                </div>
+                <div class="form-group">
+                    <label>Mileage</label>
+                    @Html.TextBoxFor(m => m.Mileage, new { @class = "form-control" })
+                </div>
+                <div class="form-group">
+                    <label>MSRP</label>
+                    @Html.TextBoxFor(m => m.MSRP, new { @class = "form-control" })
+                </div>
+            </div>
+            <div class="col col-md-4">
+                <div class="form-group">
+                    <label>Model</label>
+                    @Html.DropDownListFor(m => m.SelectedModelId, Model.AllModels, new { @class = "form-control", @id = "modelList" })
+                </div>
+                <div class="form-group">
+                    <label>Body Style</label>
+                    @Html.DropDownListFor(m => m.SelectedStyleId, Model.AllStyles, new { @class = "form-control" })
+                </div>
+                <div class="form-group">
+                    <label>Transmission</label>
+                    @Html.DropDownListFor(m => m.SelectedTransId, Model.AllTransmissions, new { @class = "form-control" })
+                </div>
+                <div class="form-group">
+                    <label>Interior</label>
+                    @Html.DropDownListFor(m => m.SelectedInteriorColorId, Model.AllColors, new { @class = "form-control" })
+                </div>
+                <div class="form-group">
+                    <label>VIN #</label>
+                    @Html.TextBoxFor(m => m.VIN, new { @class = "form-control" })
+                </div>
+                <div class="form-group">
+                    <label>Sale Price</label>
+                    @Html.TextBoxFor(m => m.SalePrice, new { @class = "form-control" })
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col col-md-8">
+                <span class="form-group">
+                    <label>Description</label>
+                    @Html.TextAreaFor(m => m.Description, new { @class = "form-control", @rows = "6", @style = "max-width:90%; width:90%" })
+                </span>
+                <span class="form-group">
+                    <label>Upload Picture</label>
+                    @Html.TextBoxFor(m => m.Picture, new { type = "file" })
+                </span>
+            </div>
+        </div>
+        <p style="padding:8px"></p>
+        <button type="submit" class="btn btn-default">Submit</button>
+        @Html.ActionLink("Cancel", "Vehicles", "Admin", null, new { @class = "btn btn-default" })
+    }
+</div>

@@ -1,0 +1,46 @@
+﻿@model SG_Dealership.Models.MakeModelVM
+
+<h3>Models</h3>
+<span class="text text-danger">@Html.ValidationSummary()</span>
+<div class=" col col-md-8">
+    <div class="row" style="border:solid; border-color:gray; padding:10px">
+        @using (Html.BeginForm())
+        {
+            @Html.HiddenFor(m => m.UserId)
+            <div class="col col-md-4">
+                <p>New Model @Html.TextBoxFor(m => m.SubmittedModel)</p>
+            </div>
+            <div class="col col-md-4">
+                <p>Make @Html.DropDownListFor(m => m.SubmittedMakeId, Model.Makes, new { @class = "form-control" })</p>
+
+            </div>
+            <button type="submit" class="btn btn-default">Submit</button>
+        }
+    </div>
+    <p style="padding:15px"></p>
+</div>
+<div class="row">
+    <div class="col col-md-8">
+        <table class="table table-bordered table-striped">
+            <thead>
+                <tr>
+                    <th>Make</th>
+                    <th>Model</th>
+                    <th>Date Added</th>
+                    <th>User</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var mod in Model.AllModels)
+                {
+                    <tr>
+                        <td>@mod.Maker.Name </td>
+                        <td>@mod.Name </td>
+                        <td>@mod.DateAdded </td>
+                        <td>@mod.UserAddedBy.UserName </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

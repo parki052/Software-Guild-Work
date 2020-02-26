@@ -1,0 +1,17 @@
+C:\Repos\kellen-parkinson-individual-work\SGBank\SGBank.Tests\bin\Debug\SGBank.Tests.dll.config
+C:\Repos\kellen-parkinson-individual-work\SGBank\SGBank.Tests\bin\Debug\SGBank.Tests.dll
+C:\Repos\kellen-parkinson-individual-work\SGBank\SGBank.Tests\bin\Debug\SGBank.Tests.pdb
+C:\Repos\kellen-parkinson-individual-work\SGBank\SGBank.Tests\bin\Debug\nunit.framework.dll
+C:\Repos\kellen-parkinson-individual-work\SGBank\SGBank.Tests\bin\Debug\SGBank.BLL.dll
+C:\Repos\kellen-parkinson-individual-work\SGBank\SGBank.Tests\bin\Debug\SGBank.Data.dll
+C:\Repos\kellen-parkinson-individual-work\SGBank\SGBank.Tests\bin\Debug\SGBank.Models.dll
+C:\Repos\kellen-parkinson-individual-work\SGBank\SGBank.Tests\bin\Debug\SGBank.BLL.pdb
+C:\Repos\kellen-parkinson-individual-work\SGBank\SGBank.Tests\bin\Debug\SGBank.Data.pdb
+C:\Repos\kellen-parkinson-individual-work\SGBank\SGBank.Tests\bin\Debug\SGBank.Models.pdb
+C:\Repos\kellen-parkinson-individual-work\SGBank\SGBank.Tests\bin\Debug\nunit.framework.pdb
+C:\Repos\kellen-parkinson-individual-work\SGBank\SGBank.Tests\bin\Debug\nunit.framework.xml
+C:\Repos\kellen-parkinson-individual-work\SGBank\SGBank.Tests\obj\Debug\SGBank.Tests.csprojResolveAssemblyReference.cache
+C:\Repos\kellen-parkinson-individual-work\SGBank\SGBank.Tests\obj\Debug\SGBank.Tests.csproj.CoreCompileInputs.cache
+C:\Repos\kellen-parkinson-individual-work\SGBank\SGBank.Tests\obj\Debug\SGBank.Tests.csproj.CopyComplete
+C:\Repos\kellen-parkinson-individual-work\SGBank\SGBank.Tests\obj\Debug\SGBank.Tests.dll
+C:\Repos\kellen-parkinson-individual-work\SGBank\SGBank.Tests\obj\Debug\SGBank.Tests.pdb

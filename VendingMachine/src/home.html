@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Vending Machine</title>
+    <link href="css/bootstrap.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id ='mainBody' class='container' style='width:1200px;'>
+        <div id='header'class='page-header text-center'>
+            <h1>Vending Machine</h1>
+        </div>
+
+        <div id='productsContainer' class='col col-md-6'>
+            <div class'row' id='products'></div>
+        </div>
+                       
+            <div id='operationsColumn' class ='col col-md-3' style='margin-left:160px;'>
+                <div id='moneyContainer' class='row' style='margin-left:29px;'>
+                    <p>
+                      <h2 style='margin-left:38px;'>Total $ In</h2>  
+                    </p>
+                    <input class='form-control' type='text' id='moneyIn' style='text-align:center; margin-left:65px; width:75px; background-color:black; color:chartreuse;' readonly>
+                    <br>         
+                    <button type='button' class='btn btn-primary' id='dollarButton' style='height:40px; width:100px;'>
+                        Add Dollar         
+                    </button>
+                                       
+                    <button type='button' class='btn btn-primary' id='quarterButton' style='height:40px;width:100px'>
+                        Add Quarter
+                    </button>
+                    <br><br>
+                    <button type='button' class='btn btn-primary' id='dimeButton' style='height:40px;width:100px'>
+                        Add Dime
+                    </button>
+
+                    <button type='button' class='btn btn-primary' id='nickelButton' style='height:40px;width:100px'>
+                        Add Nickel
+                    </button>
+
+                  <hr/>
+            </div>
+                <div id='infoAndPurchase' class='row' style='margin-left:10px;'>                        
+                            <h2 style='margin-left:53px;'>Messages</h2>                        
+                        <input class='form-control' type='text' id='messageDisplay' style='text-align:center; margin-left:34px; width:180px; height:50px; background-color:black; color:chartreuse;' readonly>
+                        <br>
+                        <span style='white-space: nowrap; padding-left:5px;'>
+                            <h4 style='display:inline-block;'>Item:</h4>
+                            <input class='form-control' type='text' id='selectedItem' style='text-align:center; display:inline-block; width:150px; height:40px; background-color:black; color:chartreuse;' readonly>                            
+                        </span><br><br>
+                        <button type='button' class='btn btn-primary' id='purchaseButton' style='height:40px; width:150px; margin-left:50px;'>Make Purchase</button>    
+                            <hr/>
+                </div>
+                <div id='changeContainer' class='row' style='margin-left:10px;'>
+                    <h2 style='margin-left:65px';>Change</h2>
+                    <textarea class='form-control' rows='4' type='text' id='changeDisplay' style='overflow:hidden; text-align:center; width:250px; height:100px; background-color:black; color:chartreuse;' readonly></textarea>
+                    <br>
+                    <button type='button' class='btn btn-primary' id='changeButton' style='height:40px; width:150px; margin-left:50px;'>Change Return</button>
+
+                    <hr/>
+                </div>
+            </div>
+
+            <div class='modal' tabindex="-1" role='dialog' aria-hidden='true' id='errorModal'>
+                <div class='modal-dialog' role='document'>
+                    <div class='modal-content'>
+                        <div class='modal-header'>
+                            <h3 class='modal-title' id='modalLabel' style='text-align:center;'>Error:</h3>
+
+                        </div>
+                        <div class='alert alert-danger' role='alert'><div style='text-align:center;'>You must select an item before making a purchase.</div></div>
+                        <div class='modal-footer' style='text-align:center;';>
+                            <button type='button' class='btn btn-primary' id='closeModal' style='text-align:center;'>Close</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+    </div>
+    <script src='js/jquery-2.2.4.min.js'></script>
+    <script src='js/bootstrap.min.js'></script>
+    <script src='js/home.js'></script>
+</body>
+
+</html>

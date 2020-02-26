@@ -1,0 +1,12 @@
+C:\Repos\SGBank\SGBank.Models\bin\Debug\SGBank.Models.dll
+C:\Repos\SGBank\SGBank.Models\bin\Debug\SGBank.Models.pdb
+C:\Repos\SGBank\SGBank.Models\obj\Debug\SGBank.Models.csprojResolveAssemblyReference.cache
+C:\Repos\SGBank\SGBank.Models\obj\Debug\SGBank.Models.csproj.CoreCompileInputs.cache
+C:\Repos\SGBank\SGBank.Models\obj\Debug\SGBank.Models.dll
+C:\Repos\SGBank\SGBank.Models\obj\Debug\SGBank.Models.pdb
+C:\Repos\kellen-parkinson-individual-work\SGBank\SGBank.Models\bin\Debug\SGBank.Models.dll
+C:\Repos\kellen-parkinson-individual-work\SGBank\SGBank.Models\bin\Debug\SGBank.Models.pdb
+C:\Repos\kellen-parkinson-individual-work\SGBank\SGBank.Models\obj\Debug\SGBank.Models.csprojResolveAssemblyReference.cache
+C:\Repos\kellen-parkinson-individual-work\SGBank\SGBank.Models\obj\Debug\SGBank.Models.csproj.CoreCompileInputs.cache
+C:\Repos\kellen-parkinson-individual-work\SGBank\SGBank.Models\obj\Debug\SGBank.Models.dll
+C:\Repos\kellen-parkinson-individual-work\SGBank\SGBank.Models\obj\Debug\SGBank.Models.pdb

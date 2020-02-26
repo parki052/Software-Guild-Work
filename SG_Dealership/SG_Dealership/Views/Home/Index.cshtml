@@ -1,0 +1,28 @@
+﻿@model SG_Dealership.Models.HomeVM
+@{
+    ViewBag.Title = "Home";
+}
+
+<div class="jumbotron">
+    <h1>SG Dealership</h1>
+    <p class="lead">Want cars? We've got cars!</p>
+</div>
+<hr style="border-color:black" />
+<div class="row">
+        <h2>Featured Vehicles</h2>
+            @foreach (var vehicle in Model.FeaturedVehicles)
+            {
+                <a href="~/Inventory/Details/@vehicle.Id" class='btn btn-default' style="width:21%; height:230px; margin-left: 2%; margin-bottom:2%;">
+                    @if(vehicle.PicturePath != null)
+                    {
+                        <img src="@Url.Content(vehicle.PicturePath)" height="160" width="160" style="padding-top:10px;  border-radius:15%" />
+                    }
+                    <br />
+                    <h4>
+                        @vehicle.Year @vehicle.ModelType.Maker.Name  @vehicle.ModelType.Name <br />
+                        @string.Format("{0:C}", @vehicle.SalePrice)
+
+                    </h4>
+                </a>
+            }
+</div>

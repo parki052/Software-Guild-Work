@@ -1,0 +1,66 @@
+﻿@model SG_Dealership.Models.SearchVM
+@section Scripts
+    {
+    <script type="text/javascript">
+        $("#SearchButton").click(function (event) {
+            var searchTerm = $('#SearchTerm').val();
+            var minPrice = $('#MinPrice').val();
+            var maxPrice = $('#MaxPrice').val();
+            var minYear = $('#MinYear').val();
+            var maxYear = $('#MaxYear').val();
+
+
+            $.ajax({
+                type: 'GET',
+                url: 'http://localhost:63082/inventory/search/' + searchTerm + "/" + minPrice + "/" + maxPrice + "/" + minYear + "/" + maxYear + "/" + "NewUsed",
+                success: function (vehicles) {
+                    $('#carContainer').text(' ')
+                    $.each(vehicles, function (index, vehicle) {
+
+
+                        $('#carContainer').append('<div class="row" style="border: solid; border-color: gray; padding: 10px"><div class="col col-md-3"><h3><b>' + vehicle.Year + " " + vehicle.ModelType.Maker.Name + " " + vehicle.ModelType.Name +
+                            '</b></h3></div ><div class="col col-md-3"><ul><li style="padding:8px"><b>Body Style: </b>' + vehicle.BodyStyle.Name +
+                            '</li><li style = "padding:8px" ><b>Trans: </b>' + vehicle.Trans.Name +
+                            '</li><li style = "padding:8px" > <b>Color: </b>' + vehicle.ExteriorColor.Name +
+                            '</li></ul></div ><div class="col col-md-3"><ul><li style="padding:8px"><b>Interior: </b>' + vehicle.InteriorColor.Name +
+                            '</li><li style = "padding:8px" > <b>Mileage: </b>' + vehicle.Mileage +
+                            '</li><li style = "padding:8px" > <b>VIN: </b>' + vehicle.VIN +
+                            '</li></ul ></div ><div class="col col-md-3"><ul><li style="padding:8px"><b>Sale Price: </b>' + '$' + vehicle.SalePrice.toFixed(2) +
+                            '</li><li style = "padding:8px" > <b>MSRP: </b>' + '$' + vehicle.MSRP.toFixed(2) + '</li>' +
+                            '<a href="http://localhost:63082/Sales/Purchase/' + vehicle.Id + '" class="btn btn-default">Purchase' + '</a></ul></div ></div ><p style="padding:5px"></p>'
+                        )
+                    }
+                    )
+                },
+                error: function (a, b, c) {
+                    alert("There are no models that correspond to the selected make.")
+                }
+            });
+        });
+    </script>
+}
+<div>
+    <p style="padding:20px"></p>
+    <div class="row" style="border:solid; border-color:gray; padding:20px">
+        <div class="col col-md-4">
+            <h3>Quick Search</h3>
+            @Html.TextBoxFor(m => m.SearchTerm, new { @id = "SearchTerm", @style = "Width:90%" })
+        </div>
+        <div class="col col-md-4">
+            Price @Html.DropDownListFor(m => m.MinPrice, Model.MinPrices, new { @id = "MinPrice", @style = "padding:8px; width:40%" })
+
+            @Html.DropDownListFor(m => m.MaxPrice, Model.MaxPrices, new { @id = "MaxPrice", @style = "padding:8px; width:40%" })
+            <p style="padding:4px"></p>
+            <button class="btn btn-primary btn-block" id="SearchButton">Search</button>
+        </div>
+        <div class="col col-md-4">
+            Year @Html.DropDownListFor(m => m.DefaultMin, Model.MinYears, new { @id = "MinYear", @style = "padding:8px" })
+            @Html.DropDownListFor(m => m.DefaultMax, Model.MaxYears, new { @id = "MaxYear", @style = "padding:8px" })
+
+        </div>
+    </div>
+    <p style="padding:5px"></p>
+    <div id="carContainer">
+    </div>
+    <p style="padding:15px"></p>
+</div>

@@ -1,0 +1,40 @@
+﻿@model SG_Dealership.Models.MakeModelVM
+    <h3>Makes</h3>
+    <span class="text text-danger">@Html.ValidationSummary()</span>
+    <div class=" col col-md-6">
+        <div class="row" style="border:solid; border-color:gray; padding:10px">
+            @using (Html.BeginForm())
+            {
+                @Html.HiddenFor(m => m.UserId)
+                <span>
+                    New Make @Html.TextBoxFor(m => m.SubmittedMake)
+                    <button type="submit" class="btn btn-default">Submit</button>
+                </span>
+
+            }
+        </div>
+        <p style="padding:15px"></p>
+    </div>
+    <div class="row">
+        <div class="col col-md-8">
+            <table class="table table-bordered table-striped">
+                <thead>
+                    <tr>
+                        <th>Make</th>
+                        <th>Date Added</th>
+                        <th>User</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var make in Model.AllMakes)
+                    {
+                        <tr>
+                            <td>@make.Name</td>
+                            <td>@make.DateAdded</td>
+                            <td>@make.UserAddedBy.UserName</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>

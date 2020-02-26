@@ -1,0 +1,16 @@
+D:\Git\Curriculum\dotnet\ObjectOrientedProgramming\02-Classes-And-Objects\Assessments\Battleship\BattleShip_Start\BattleShip.UI\bin\Debug\BattleShip.UI.exe.config
+D:\Git\Curriculum\dotnet\ObjectOrientedProgramming\02-Classes-And-Objects\Assessments\Battleship\BattleShip_Start\BattleShip.UI\bin\Debug\BattleShip.UI.exe
+D:\Git\Curriculum\dotnet\ObjectOrientedProgramming\02-Classes-And-Objects\Assessments\Battleship\BattleShip_Start\BattleShip.UI\bin\Debug\BattleShip.UI.pdb
+D:\Git\Curriculum\dotnet\ObjectOrientedProgramming\02-Classes-And-Objects\Assessments\Battleship\BattleShip_Start\BattleShip.UI\obj\Debug\BattleShip.UI.csprojResolveAssemblyReference.cache
+D:\Git\Curriculum\dotnet\ObjectOrientedProgramming\02-Classes-And-Objects\Assessments\Battleship\BattleShip_Start\BattleShip.UI\obj\Debug\BattleShip.UI.exe
+D:\Git\Curriculum\dotnet\ObjectOrientedProgramming\02-Classes-And-Objects\Assessments\Battleship\BattleShip_Start\BattleShip.UI\obj\Debug\BattleShip.UI.pdb
+C:\Repos\kellen-parkinson-individual-work\Battleship\BattleShip.UI\obj\Debug\BattleShip.UI.csprojResolveAssemblyReference.cache
+C:\Repos\kellen-parkinson-individual-work\Battleship\BattleShip.UI\obj\Debug\BattleShip.UI.csproj.CoreCompileInputs.cache
+C:\Repos\kellen-parkinson-individual-work\Battleship\BattleShip.UI\obj\Debug\BattleShip.UI.exe
+C:\Repos\kellen-parkinson-individual-work\Battleship\BattleShip.UI\obj\Debug\BattleShip.UI.pdb
+C:\Repos\kellen-parkinson-individual-work\Battleship\BattleShip.UI\bin\Debug\BattleShip.UI.exe.config
+C:\Repos\kellen-parkinson-individual-work\Battleship\BattleShip.UI\bin\Debug\BattleShip.UI.exe
+C:\Repos\kellen-parkinson-individual-work\Battleship\BattleShip.UI\bin\Debug\BattleShip.UI.pdb
+C:\Repos\kellen-parkinson-individual-work\Battleship\BattleShip.UI\bin\Debug\BattleShip.BLL.dll
+C:\Repos\kellen-parkinson-individual-work\Battleship\BattleShip.UI\bin\Debug\BattleShip.BLL.pdb
+C:\Repos\kellen-parkinson-individual-work\Battleship\BattleShip.UI\obj\Debug\BattleShip.UI.csproj.CopyComplete

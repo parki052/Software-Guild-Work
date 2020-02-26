@@ -1,0 +1,6 @@
+C:\Repos\kellen-parkinson-individual-work\SGFlooring\SGFlooring.Models\bin\Debug\SGFlooring.Models.dll
+C:\Repos\kellen-parkinson-individual-work\SGFlooring\SGFlooring.Models\bin\Debug\SGFlooring.Models.pdb
+C:\Repos\kellen-parkinson-individual-work\SGFlooring\SGFlooring.Models\obj\Debug\SGFlooring.Models.csproj.CoreCompileInputs.cache
+C:\Repos\kellen-parkinson-individual-work\SGFlooring\SGFlooring.Models\obj\Debug\SGFlooring.Models.dll
+C:\Repos\kellen-parkinson-individual-work\SGFlooring\SGFlooring.Models\obj\Debug\SGFlooring.Models.pdb
+C:\Repos\kellen-parkinson-individual-work\SGFlooring\SGFlooring.Models\obj\Debug\SGFlooring.Models.csprojResolveAssemblyReference.cache

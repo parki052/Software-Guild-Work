@@ -1,0 +1,14 @@
+C:\Repos\SG_RPS\SG_RPS\bin\Debug\SG_RPS.exe.config
+C:\Repos\SG_RPS\SG_RPS\bin\Debug\SG_RPS.exe
+C:\Repos\SG_RPS\SG_RPS\bin\Debug\SG_RPS.pdb
+C:\Repos\SG_RPS\SG_RPS\obj\Debug\SG_RPS.csprojResolveAssemblyReference.cache
+C:\Repos\SG_RPS\SG_RPS\obj\Debug\SG_RPS.csproj.CoreCompileInputs.cache
+C:\Repos\SG_RPS\SG_RPS\obj\Debug\SG_RPS.exe
+C:\Repos\SG_RPS\SG_RPS\obj\Debug\SG_RPS.pdb
+C:\Repos\kellen-parkinson-individual-work\RockPaperScissors\SG_RPS\bin\Debug\SG_RPS.exe.config
+C:\Repos\kellen-parkinson-individual-work\RockPaperScissors\SG_RPS\bin\Debug\SG_RPS.exe
+C:\Repos\kellen-parkinson-individual-work\RockPaperScissors\SG_RPS\bin\Debug\SG_RPS.pdb
+C:\Repos\kellen-parkinson-individual-work\RockPaperScissors\SG_RPS\obj\Debug\SG_RPS.csprojResolveAssemblyReference.cache
+C:\Repos\kellen-parkinson-individual-work\RockPaperScissors\SG_RPS\obj\Debug\SG_RPS.csproj.CoreCompileInputs.cache
+C:\Repos\kellen-parkinson-individual-work\RockPaperScissors\SG_RPS\obj\Debug\SG_RPS.exe
+C:\Repos\kellen-parkinson-individual-work\RockPaperScissors\SG_RPS\obj\Debug\SG_RPS.pdb

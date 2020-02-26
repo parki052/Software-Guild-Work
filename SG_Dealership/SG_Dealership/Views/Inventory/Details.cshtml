@@ -1,0 +1,48 @@
+﻿@model SG_Dealership.Models.DetailsVM
+
+<h3>Vehicle Details</h3>
+<hr />
+<div class="row" style="border:solid; border-color:gray; padding:10px">
+    <div class=" row">
+        <div class="col col-md-3">
+
+            <h3><b>@Model.Vehicle.Year @Model.Vehicle.ModelType.Maker.Name @Model.Vehicle.ModelType.Name</b></h3>
+            @if (Model.Vehicle.PicturePath != null)
+            {
+                <img src="@Url.Content(@Model.Vehicle.PicturePath)" width="150" height="150" />
+            }
+        </div>
+        <div class="col col-md-3">
+            <br /><br />
+            <ul>
+                <li style="padding:8px"><b>Body Style:</b> @Model.Vehicle.BodyStyle.Name</li>
+                <li style="padding:8px"><b>Trans:</b> @Model.Vehicle.Trans.Name</li>
+                <li style="padding:8px"><b>Color:</b> @Model.Vehicle.ExteriorColor.Name</li>
+            </ul>
+        </div>
+        <div class="col col-md-3">
+            <br /><br />
+            <ul>
+                <li style="padding:8px"><b>Interior:</b> @Model.Vehicle.InteriorColor.Name</li>
+                <li style="padding:8px"><b>Mileage:</b> @Model.Vehicle.Mileage</li>
+                <li style="padding:8px"><b>VIN:</b> @Model.Vehicle.VIN</li>
+            </ul>
+        </div>
+        <div class="col col-md-3">
+            <br /><br />
+            <ul>
+                <li style="padding:8px"><b>Sale Price:</b> $@Model.Vehicle.SalePrice</li>
+                <li style="padding:8px"><b>MSRP:</b> $@Model.Vehicle.MSRP</li>
+            </ul>
+        </div>
+    </div>
+
+    <hr style="border-color:black" />
+    <h3 style="text-align:center"><b>Details:</b></h3>
+    <p style="text-align:center">@Model.Vehicle.Description</p>
+    <p style="text-align:right">
+        @Html.ActionLink("Contact Us", "Contact", "Home", new { Id = Model.Vehicle.Id }, new { @class = "btn btn-default" })
+    </p>
+</div>
+
+
